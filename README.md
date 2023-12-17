@@ -66,6 +66,9 @@ python manage.py migrate
 
 ## Step 5: Create a Superuser (Admin)
 
+user::easir09
+password ::ab12cd34
+
 Create a superuser account to access the Django admin interface:
 
 ```bash
