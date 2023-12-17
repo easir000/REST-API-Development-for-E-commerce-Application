@@ -109,4 +109,33 @@ If you want to containerize the application using Docker, follow these additiona
 
 Now, the Django E-commerce REST API should be running in a Docker container.
 
+***** 
+bash
+Copy code
+curl -X POST -d "username=your_username&password=your_password" http://127.0.0.1:8000/api/token/
+This will return a token. Use this token in subsequent requests:
+bash
+Copy code
+curl -X GET http://127.0.0.1:8000/api/products/ -H "Authorization: Bearer YOUR_TOKEN" 
+
+***** http://127.0.0.1:8000/admin/ [Bearer YOUR_TOKEN can be collected from here also ]
+
+
+"products": "http://127.0.0.1:8000/api/products/",
+"reviews": "http://127.0.0.1:8000/api/reviews/",
+"orders": "http://127.0.0.1:8000/api/orders/",
+"order-items": "http://127.0.0.1:8000/api/order-items/"
+
+
+
+#FOR CRUD #
+
+"products": "http://127.0.0.1:8000/api/products/{products id}",
+"reviews": "http://127.0.0.1:8000/api/reviews/{reviews id}",
+"orders": "http://127.0.0.1:8000/api/orders/{orders id}",
+"order-items": "http://127.0.0.1:8000/api/order-items/{order-items id}"
+
+
+
+
 Congratulations! You have successfully set up the Django E-commerce REST API on your local machine. Explore the API documentation and start building your e-commerce application!
