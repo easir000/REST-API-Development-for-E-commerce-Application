@@ -85,11 +85,12 @@ Start the Django development server:
 python manage.py runserver
 ```
 
-Access the Django admin interface at [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/) and log in with the superuser credentials created earlier.
+Access the Django admin interface at (https://easir05.pythonanywhere.com/admin/) and log in with the superuser credentials created earlier.
+USER :: https://easir05.pythonanywhere.com/api/
 
 ## Step 7: Explore API Endpoints
 
-Visit [http://127.0.0.1:8000/api/swagger/](http://127.0.0.1:8000/api/swagger/) to explore the API documentation using Swagger. You can also use tools like Postman to interact with the API endpoints.
+Visit [http://127.0.0.1:8000/api/swagger/](https://easir05.pythonanywhere.com/api/swagger/) to explore the API documentation using Swagger. You can also use tools like Postman to interact with the API endpoints.
 
 ## Additional Steps (Optional)
 
